@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>首頁</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="/static/css/index.css">
+	<script src="/static/js/jquery-1.11.3.js"></script>
+	<script src="/static/js/index.js"></script>
+</head>
+<body>
+	<!-- 頁面結構劃分 -->
+	<div id="container">
+		<!-- 1. 導航 -->
+		<div id="nav">
+			<!-- 1.1 右側導航 -->
+			<ul class="rightNav">
+				<li id="login">
+				</li>
+				<li>
+					<b></b>
+					<a href="#">果園公告</a>
+				</li>
+				<li>
+					<b></b>
+					<a href="#">券卡兌換</a>
+				</li>
+				<li>
+					<b></b>
+					<a href="#">手機果園</a>
+				</li>
+			</ul>
+
+			<!-- 1.2 左側導航 -->
+			<ol class="leftNav">
+				<li class="address">
+					<span class="currentAddress">上海</span>
+					<!-- 三角標 -->
+					<u></u>
+					<ul class="select">
+						<li>北京</li>
+						<li>廣州</li>
+						<li>深圳</li>
+						<li>上海</li>
+					</ul>
+				</li>
+				<li>滿百包郵（含郊區）</li>
+				<li>星夜達</li>
+			</ol>
+		</div>
+
+		<div id="cart" style="text-align: right; font-size: 16px; margin: 15px 0;">
+			<a href="#">我的購物車(0)</a>
+		</div>
+
+		<!-- 2. 橫幅 -->
+		<div id="banner">
+			<!-- 圖片輪播 -->
+			<div class="wrapper">
+				<img src="/static/img/banner1.jpg">
+				<img src="/static/img/banner2.jpg">
+				<img src="/static/img/banner3.jpg">
+			</div>
+			<ul class="imgNav">
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+			</ul>
+		</div>
+
+		<!-- 3. 今日推薦 -->
+		<div id="adv">
+			<a href="#">
+				<img src="/static/img/25af37592bf484fbeaef1cc4ff1e09c7.jpg">
+			</a>
+			<a href="#">
+				<img src="/static/img/d72b849b461c08d991c265df00a1bfde.jpg">
+			</a>
+			<a href="#">
+				<img src="/static/img/2ba20598135dbba5e97d241ebfa167d9.jpg">
+			</a>
+			<a href="#">
+				<img src="/static/img/904419aa2e364412b3c07c3cbda24ef9.jpg" class="lastImg">
+			</a>
+		</div>
+
+		<!-- 4. 主體信息 -->
+		<div id="main">
+			<!-- 生活卡券 -->
+			<div class="item">
+				<!-- 上方禮品卡券部分 -->
+				<p class="goodsClass">
+					<img src="/static/img/t4.png">
+					<a href="#">更多</a>
+				</p>
+				<!-- 下方商品信息展示 -->
+				<ul>
+					<li>
+						<p>
+							<img src="/static/img/1-270x270-3877-BXDY6KCU.jpg">
+						</p>
+						<div class="content">
+							<a href="#">
+								<img src="/static/img/cart.png">
+							</a>
+							<p>歡樂時光水果禮籃</p>
+							<span>
+								&yen;188.00/份
+							</span>
+						</div>
+					</li>
+					<li>
+						<p>
+							<img src="/static/img/1-270x270-2114-226C8S26.jpg">
+						</p>
+						<div class="content">
+							<a href="#">
+								<img src="/static/img/cart.png">
+							</a>
+							<p>真心祝福水果禮籃</p>
+							<span>
+								&yen;358.00/禮籃
+							</span>
+						</div>
+					</li>
+					<li>
+						<p>
+							<img src="/static/img/1-270x270-2109-SDK5WUW8.jpg">
+						</p>
+						<div class="content">
+							<a href="#">
+								<img src="/static/img/cart.png">
+							</a>
+							<p>深情厚意水果禮籃</p>
+							<span>
+								&yen;580.00/1盒
+							</span>
+						</div>
+					</li>
+					<li>
+						<p>
+							<img src="/static/img/1-270x270-701-CB41CHUW.jpg">
+						</p>
+						<div class="content">
+							<a href="#">
+								<img src="/static/img/cart.png">
+							</a>
+							<p>天天果園500元充值卡</p>
+							<span>
+								&yen;500.00/1張
+							</span>
+						</div>
+					</li>
+					<li class="no-margin">
+						<p>
+							<img src="/static/img/1-270x270-695-F2BSB4DC.jpg">
+						</p>
+						<div class="content">
+							<a href="#">
+								<img src="/static/img/cart.png">
+							</a>
+							<p>天天果園100元充值卡</p>
+							<span>
+								&yen;100.00/1張
+							</span>
+						</div>
+					</li><li>
+						<p>
+							<img src="/static/img/1-270x270-430-9RBRWTU9.jpg">
+						</p>
+						<div class="content">
+							<a href="#">
+								<img src="/static/img/cart.png">
+							</a>
+							<p>美懷備至禮盒</p>
+							<span>
+								&yen;198.00/1盒
+							</span>
+						</div>
+					</li>
+					<li>
+						<p>
+							<img src="/static/img/1-270x270-435-8829CP99.jpg">
+						</p>
+						<div class="content">
+							<a href="#">
+								<img src="/static/img/cart.png">
+							</a>
+							<p>萬事如意禮盒</p>
+							<span>
+								&yen;198.00/1盒
+							</span>
+						</div>
+					</li>
+					<li>
+						<p>
+							<img src="/static/img/1-270x270-3356-T4P73D4B.jpg">
+						</p>
+						<div class="content">
+							<a href="#">
+								<img src="/static/img/cart.png">
+							</a>
+							<p>與眾不同禮盒</p>
+							<span>
+								&yen;288.00/1盒
+							</span>
+						</div>
+					</li>
+					<li>
+						<p>
+							<img src="/static/img/1-270x270-2163-8PBW628F.jpg">
+						</p>
+						<div class="content">
+							<a href="#">
+								<img src="/static/img/cart.png">
+							</a>
+							<p>團聚禮盒</p>
+							<span>
+								&yen;168.00/1盒
+							</span>
+						</div>
+					</li>
+					<li class="no-margin">
+						<p>
+							<img src="/static/img/1-270x270-27316-F2BUCPRH.jpg">
+						</p>
+						<div class="content">
+							<a href="#">
+								<img src="/static/img/cart.png">
+							</a>
+							<p>誠心誠意禮盒提貨券</p>
+							<span>
+								&yen;178.00/1張
+							</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- <div style="clear: both;"></div> -->
+		</div>
+
+		<!-- 5. 底部信息 -->
+		<!-- 主體信息模塊高度為0（子元素全部浮動），影響底部模塊佈局，需要清除浮動
+				1. 由於主體信息可以動態加載，不能固定高度
+				2. 可以給父元素設置overflow: hidden;
+				3. 也可以設置清除浮動，為父元素末尾添加空的塊級標籤，設置clear:both
+		 -->
+		<div id="footer"></div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

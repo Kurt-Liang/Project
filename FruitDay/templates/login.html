@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		{% block title %}
+			天天果園-會員登錄
+		{% endblock %}
+	</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="/static/css/login.css">
+	{% block style %}
+	{% endblock %}
+
+	{% block script %}
+	{% endblock %}
+</head>
+<body>
+	<div id="container">
+		<!-- 1. 標題 -->
+		<h2>
+			{% block header %}
+				會員登錄
+			{% endblock %}
+		</h2>
+		<!-- 2. 主體分兩部分 -->
+		<div class="left">
+			<img src="/static/img/huiyuan.jpg">
+			{% block abchor %}
+			<a href="#">會員註冊></a>
+			{% endblock %}
+		</div>
+		<div class="right">
+			{% block form %}
+			<form action="" method="post">
+				{% csrf_token %}
+				<!-- 第一行 -->
+{#				<div class="form-line">#}
+{#					<p>手機號</p>#}
+{#					<input type="text" name="uname" class="form-control">#}
+{#				</div>#}
+{#				<!-- 第二行 -->#}
+{#				<div class="form-line">#}
+{#					<p>密碼</p>#}
+{#					<input type="password" name="upwd" placeholder="請輸入6-20位的字符" class="form-control">#}
+{#				</div>#}
+
+				<!-- 循環form得到每一個控件並構建程 <div></div> -->
+				{% for field in form %}
+					<div class="form-line">
+						<p>{{ field.label }}</p>
+						{{ field }}
+					</div>
+				{% endfor %}
+
+
+				<!-- 第三行 -->
+				<div class="form-line">
+					<p></p>
+					<div>
+						<p class="forget">
+							<a href="#">忘記密碼?</a>
+							<a href="#">快捷登錄</a>
+						</p>
+						<input type="checkbox" name="isSaved" class="isSaved"> 記住密碼
+					</div>
+				</div>
+				<!-- 第四行 -->
+				<div class="form-line">
+					<p></p>
+					<div>
+						<input type="submit" name="" value="登錄" class="loginBtn">
+						<a href="#" class="registBtn">註冊會員</a>
+					</div>
+				</div>
+			</form>
+			{% endblock %}
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
